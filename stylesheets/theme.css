@@ -572,6 +572,7 @@ figure {
 
 /* Docks Afix navigation */
 .docs-sidebar-nav {
+  font-size: 26px;
   list-style-type: none;
   margin: 24px 20px 0 0;
   padding: 0;
