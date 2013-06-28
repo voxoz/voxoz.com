@@ -1725,4 +1725,14 @@ figure {
 
 .btn-large {
     border-radius: 0;
-{
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.well {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius; 3;
+}
