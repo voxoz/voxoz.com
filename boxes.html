@@ -86,17 +86,7 @@
         <br><br><br><br>
 
         <div class="well">
-            <!--div class="slider slider-horizontal" style="width: 140px;">
-                <div class="slider-track">
-                    <div class="slider-selection" style="left: 30%; width: 0%;"></div>
-                    <div class="slider-handle round" style="left: 0%;"></div>
-                    <div class="slider-handle round hide" style="left: 0%;"></div>
-                </div>
-                <div class="tooltip top in" style="top: -40px; left: -49px;">
-                    <div class="tooltip-arrow"></div>
-                    <div class="tooltip-inner">Current value: 5</div>
-                </div-->
-                <input type="text" class="span8" value="4" id="sl1">
+          <input type="text" class="span8" value="4" id="sl1">
             </div>
         </div>
 
@@ -118,7 +108,7 @@
     <script>
       (function($){
         $('#sl1').slider({
-          formatter: function(value){
+          formater: function(value){
             return 'Current value: '+value;
           }
         });
