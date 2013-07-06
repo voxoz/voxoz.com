@@ -12,6 +12,7 @@
   <link href="stylesheets/responsive.css" media="screen" rel="stylesheet" type="text/css">
   <link href="stylesheets/font-awesome.css" media="screen" rel="stylesheet" type="text/css">
   <link href="stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="stylesheets/slider.css" media="screen" rel="stylesheet" type="text/css">
   <link href="stylesheets/fonts.css" media="screen" rel="stylesheet" type="text/css">
 <style type="text/css"></style></head>
   <body class="theme-pattern-45-degree-fabric">
@@ -81,6 +82,24 @@
                         </table>
                         <br><br>
                         <a class="btn btn-large btn-success" style="margin-top: -10px;">Create New Box</a>
+
+        <br><br><br><br>
+
+        <div class="well">
+            <div class="slider slider-horizontal" style="width: 140px;">
+                <div class="slider-track">
+                    <div class="slider-selection" style="left: 30%; width: 0%;"></div>
+                    <div class="slider-handle round" style="left: 0%;"></div>
+                    <div class="slider-handle round hide" style="left: 0%;"></div>
+                </div>
+                <div class="tooltip top in" style="top: -40px; left: -49px;">
+                    <div class="tooltip-arrow"></div>
+                    <div class="tooltip-inner">Current value: 5</div>
+                </div>
+                <!--input type="text" class="span8" value="4" id="sl1" style-->
+            </div>
+        </div>
+
                     </div>
                 </div>
                 <br><br><br>
@@ -90,7 +109,17 @@
     <!-- Page Footer -->
     <footer class="section" id="footer" role="contentinfo">
     </footer>
+    <script>
+
+ $('#sl1').slider({
+          formater: function(value) {
+            return 'Current value: '+value;
+          }
+        });
+
+    </script>
     <script src="javascripts/jquery.min.js" type="text/javascript"></script>
+    <script src="javascripts/bootstrap-slider.js"></script>
     <script src="javascripts/bootstrap.js" type="text/javascript"></script>
     <script src="javascripts/script.js" type="text/javascript"></script>
     <script src="javascripts/switcher.js" type="text/javascript"></script>
