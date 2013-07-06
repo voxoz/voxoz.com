@@ -27,7 +27,7 @@
 								'<div class="slider-handle"></div>'+
 								'<div class="slider-handle"></div>'+
 							'</div>'+
-							'<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'+
+							'<div class="tooltip-slider"><div class="tooltip-arrow"></div><div class="tooltip-slider-inner"></div></div>'+
 						'</div>')
 							.insertBefore(this.element)
 							.append(this.element);
@@ -42,8 +42,8 @@
 
 		var tooltip = this.element.data('slider-tooltip')||options.tooltip;
 
-		this.tooltip = this.picker.find('.tooltip');
-		this.tooltipInner = this.tooltip.find('div.tooltip-inner');
+		this.tooltip = this.picker.find('.tooltip-slider');
+		this.tooltipInner = this.tooltip.find('div.tooltip-slider-inner');
 
 		this.orientation = this.element.data('slider-orientation')||options.orientation;
 		switch(this.orientation) {

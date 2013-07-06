@@ -60,9 +60,8 @@
         <div class="row-fluid">
             <div class="span3 docs-sidebar-menu">
                 <ul class="nav nav-list docs-sidebar-nav">
-                    <li class="active"><a href="boxes.html">Containers</a></li>
-                    <li><a href="#modals">Releases</a></li>
-                    <li><a href="#dropdowns">Apps</a></li>
+                    <li class="active"><a href="boxes.html">Boxes</a></li>
+                    <li><a href="releases.html">Releases</a></li>
                     <li><a href="#end">SSH</a></li>
                     <li><a href="dashboard.html">Account</a></li>
                 </ul>
@@ -71,7 +70,7 @@
             <div class="span8">
                 <div class="row-fluid">
                     <div class="span1"><i class="icon-list huge-icon"></i></div>
-                    <div class="span8"><h3>Your Linux Boxes</h3>
+                    <div class="span8"><h3>Your Linux Containers</h3>
 
                         <table class="table table-hover" style="margin-top: 60px; font-size:18pt;">
                         <thead><tr><th>ID</th><th>Host</th><th>Pass</th><th>Region</th><th>SSH</th><th>action</th></tr></thead>
@@ -81,18 +80,14 @@
                         </tbody>
                         </table>
                         <br><br>
-                        <a class="btn btn-large btn-success" style="margin-top: -10px;">Create New Box</a>
-
-        <br><br><br><br>
-
-        <div class="well">
-          <input type="text" value="4" id="sl1">
-        </div>
-
                     </div>
+
+
                 </div>
-                <br><br><br>
+          <a href="newlxc.html" class="btn btn-large btn-success" style="margin-top: -10px;">Create	 LXC</a>
             </div>
+
+
     </div>
     </div>
     <!-- Page Footer -->
@@ -108,7 +103,14 @@
       (function($){
         $('#sl1').slider({
           formater: function(value){
-            return 'Current value: '+value;
+            return 'CPU: '+value;
+          }
+        });
+      })(window.jQuery);
+      (function($){
+        $('#sl2').slider({
+          formater: function(value){
+            return 'RAM: '+value;
           }
         });
       })(window.jQuery);
