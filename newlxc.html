@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"><!-- <![endif] --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"} -->
+  <title></title>
+  <meta content="Erlang PaaS" name="description">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="stylesheets/responsive.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="stylesheets/font-awesome.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="stylesheets/slider.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="stylesheets/fonts.css" media="screen" rel="stylesheet" type="text/css">
+<style type="text/css"></style></head>
+  <body class="theme-pattern-45-degree-fabric">
+    <!-- Page Header -->
+    <header id="masthead">
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <h1 class="brand">
+              <a href="index.html">
+                Erlang Cloud
+                <i class="icon-beaker"></i>
+              </a>
+            </h1>
+            <div class="nav-collapse collapse">
+              <ul class="nav pull-right">
+                <li class=""><a href="index.html">Home</a></li>
+                <li class=""><a href="pricing.html">Pricing</a></li>
+                <li class=""><a href="apps.html">Apps</a></li>
+                <li class=""><a href="#">Devs</a></li>
+                <li class=""><a href="#">About</a></li>
+                <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                <div class="btn-group" id="style-switcher">
+                  <button class="btn btn-inverse dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-cog"></i>
+                  </button>
+                  <ul class="dropdown-menu nav-list">
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Content -->
+    <div id="content" role="main">
+    <div class="container" style="margin-top: 40px;">
+        <div class="row-fluid">
+            <div class="span3 docs-sidebar-menu">
+                <ul class="nav nav-list docs-sidebar-nav">
+                    <li class="active"><a href="boxes.html">Boxes</a></li>
+                    <li><a href="releases.html">Releases</a></li>
+                    <li><a href="#end">SSH</a></li>
+                    <li><a href="dashboard.html">Account</a></li>
+                </ul>
+            </div>
+
+            <div class="span8">
+                <div class="row-fluid">
+                    <div class="span1"><i class="icon-list huge-icon"></i></div>
+                    <div class="span8"><h3>Create Container</h3>
+		<br><br>
+	  <!--div style="height: 100px; font-size: 20pt;">Name: &nbsp; &nbsp; <input type=text value="hostname" id="hostname"></div-->
+          <div style="height: 80px; font-size: 20pt;">CPU: &nbsp; &nbsp; <input type="text" value="4" id="sl1" style="margin-left: 200px;"></div>
+          <div style="height: 80px; font-size: 20pt;">RAM: &nbsp; &nbsp; <input type="text" value="4" id="sl2" style="margin-left: 200px;"></div>
+          <a href="boxes.html" class="btn btn-large btn-success" style="margin-top: -10px;">Approve</a>
+            </div>
+
+
+            </div>
+
+
+    </div>
+    </div>
+    <!-- Page Footer -->
+    <footer class="section" id="footer" role="contentinfo">
+    </footer>
+    <script src="javascripts/jquery.min.js" type="text/javascript"></script>
+    <script src="javascripts/bootstrap-slider.js"></script>
+    <script src="javascripts/bootstrap.js" type="text/javascript"></script>
+    <script src="javascripts/script.js" type="text/javascript"></script>
+    <script src="javascripts/switcher.js" type="text/javascript"></script>
+    <script src="javascripts/ga.js" type="text/javascript"></script>
+    <script>
+      (function($){
+        $('#sl1').slider({
+          formater: function(value){
+            return 'CPU: '+value;
+          }
+        });
+      })(window.jQuery);
+      (function($){
+        $('#sl2').slider({
+          formater: function(value){
+            return 'RAM: '+value;
+          }
+        });
+      })(window.jQuery);
+    </script>
+
+
+</body></html>
