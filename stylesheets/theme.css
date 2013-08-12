@@ -1,202 +1,20 @@
 @charset "UTF-8";
+
 /*
  * SmartBiz - ver 2.0
  *
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * (c) 2013 Oxygenna.com
+ * (c) 2013 Voxoz
  *
  */
-#style-switcher {
-  position: absolute;
-  right: 100px;
-  top: 50%;
-  right: -35px;
-  margin: -17px 0 0;
-  z-index: 10000;
-}
-
-#style-switcher .btn, #style-switcher .btn-group.open .dropdown-toggle {
-  font-size: 13px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  width: 2.5em;
-  height: 2.5em;
-  padding: 0;
-}
-#style-switcher .dropdown-menu {
-  width: 250px;
-  left: -200px;
-  margin-top: 26px;
-  background-color: rgba(253, 253, 253, 0.8);
-  border-color: #e9e9e9;
-  -webkit-box-shadow: 0px 1px 1px rgba(153, 153, 153, 0.4), 0px 0px 30px rgba(233, 233, 233, 0.4) inset;
-  -moz-box-shadow: 0px 1px 1px rgba(153, 153, 153, 0.4), 0px 0px 30px rgba(233, 233, 233, 0.4) inset;
-  box-shadow: 0px 1px 1px rgba(153, 153, 153, 0.4), 0px 0px 30px rgba(233, 233, 233, 0.4) inset;
-}
-#style-switcher .dropdown-menu ul {
-  list-style-type: none;
-  margin: 0;
-}
-#style-switcher .dropdown-menu ul:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-#style-switcher .theme-colors, #style-switcher .theme-patterns {
-  text-align: center;
-}
-#style-switcher .theme-colors li, #style-switcher .theme-patterns li {
-  display: inline-block;
-}
-#style-switcher .theme-colors li a, #style-switcher .theme-patterns li a {
-  display: inline-block;
-  text-indent: -999em;
-  width: 42px;
-  height: 42px;
-  margin: 10px;
-  padding: 0;
-  -webkit-transition: all, 0.2s;
-  -moz-transition: all, 0.2s;
-  -o-transition: all, 0.2s;
-  transition: all, 0.2s;
-  cursor: pointer;
-}
-#style-switcher .theme-colors a {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-#style-switcher .theme-colors .color-green {
-  background-color: #779922;
-  -webkit-box-shadow: 0px 2px 4px #576f19 inset;
-  -moz-box-shadow: 0px 2px 4px #576f19 inset;
-  box-shadow: 0px 2px 4px #576f19 inset;
-}
-#style-switcher .theme-colors .color-green:hover {
-  background-color: #6d8c1f;
-  background-image: none;
-  -webkit-box-shadow: 0px 3px 6px #36460f inset;
-  -moz-box-shadow: 0px 3px 6px #36460f inset;
-  box-shadow: 0px 3px 6px #36460f inset;
-}
-#style-switcher .theme-colors .color-red {
-  background-color: #e8481d;
-  -webkit-box-shadow: 0px 2px 4px #bf3813 inset;
-  -moz-box-shadow: 0px 2px 4px #bf3813 inset;
-  box-shadow: 0px 2px 4px #bf3813 inset;
-}
-#style-switcher .theme-colors .color-red:hover {
-  background-color: #df4117;
-  background-image: none;
-  -webkit-box-shadow: 0px 3px 6px #902a0f inset;
-  -moz-box-shadow: 0px 3px 6px #902a0f inset;
-  box-shadow: 0px 3px 6px #902a0f inset;
-}
-#style-switcher .theme-colors .color-blue {
-  background-color: #41b7d8;
-  -webkit-box-shadow: 0px 2px 4px #279ebf inset;
-  -moz-box-shadow: 0px 2px 4px #279ebf inset;
-  box-shadow: 0px 2px 4px #279ebf inset;
-}
-#style-switcher .theme-colors .color-blue:hover {
-  background-color: #34b2d5;
-  background-image: none;
-  -webkit-box-shadow: 0px 3px 6px #1e7b95 inset;
-  -moz-box-shadow: 0px 3px 6px #1e7b95 inset;
-  box-shadow: 0px 3px 6px #1e7b95 inset;
-}
-#style-switcher .theme-patterns li {
-  display: block;
-  float: left;
-}
-#style-switcher .theme-patterns li:nth-child(4n+1) {
-  clear: both;
-}
-#style-switcher .theme-patterns a {
-  -webkit-box-shadow: 0px 1px 4px rgba(85, 85, 85, 0.5) inset;
-  -moz-box-shadow: 0px 1px 4px rgba(85, 85, 85, 0.5) inset;
-  box-shadow: 0px 1px 4px rgba(85, 85, 85, 0.5) inset;
-}
-#style-switcher .theme-patterns a:hover {
-  background-color: transparent;
-  -webkit-box-shadow: 0px 1px 6px rgba(85, 85, 85, 0.7) inset;
-  -moz-box-shadow: 0px 1px 6px rgba(85, 85, 85, 0.7) inset;
-  box-shadow: 0px 1px 6px rgba(85, 85, 85, 0.7) inset;
-}
-#style-switcher .theme-patterns .pattern-lightmesh {
-  background-image: url(../images/patterns_samples/lghtmesh.png);
-}
-#style-switcher .theme-patterns .pattern-bedge-grunge {
-  background-image: url(../images/patterns_samples/bedge_grunge.png);
-}
-#style-switcher .theme-patterns .pattern-grid {
-  background-image: url(../images/patterns_samples/grid.png);
-}
-#style-switcher .theme-patterns .pattern-noisy-grid {
-  background-image: url(../images/patterns_samples/noisy_grid.png);
-}
-#style-switcher .theme-patterns .pattern-subtle-grey {
-  background-image: url(../images/patterns_samples/grey.png);
-}
-#style-switcher .theme-patterns .pattern-retina-wood {
-  background-image: url(../images/patterns_samples/retina_wood.png);
-}
-#style-switcher .theme-patterns .pattern-noise-lines {
-  background-image: url(../images/patterns_samples/noise_lines.png);
-}
-#style-switcher .theme-patterns .pattern-tiny-grid {
-  background-image: url(../images/patterns_samples/tiny_grid.png);
-}
-#style-switcher .theme-patterns .pattern-clean-paper {
-  background-image: url(../images/patterns_samples/extra_clean_paper.png);
-}
-#style-switcher .theme-patterns .pattern-farmer {
-  background-image: url(../images/patterns_samples/farmer.png);
-}
-#style-switcher .theme-patterns .pattern-project-papper {
-  background-image: url(../images/patterns_samples/project_papper.png);
-}
-#style-switcher .theme-patterns .pattern-concrete-wall {
-  background-image: url(../images/patterns_samples/concrete_wall_2.png);
-}
-#style-switcher .theme-patterns .pattern-wavecut {
-  background-image: url(../images/patterns_samples/wavecut.png);
-}
-#style-switcher .theme-patterns .pattern-little-pluses {
-  background-image: url(../images/patterns_samples/little_pluses.png);
-}
-#style-switcher .theme-patterns .pattern-light-honeycomp {
-  background-image: url(../images/patterns_samples/light_honeycomb.png);
-}
-#style-switcher .theme-patterns .pattern-old-mathematics {
-  background-image: url(../images/patterns_samples/old_mathematics.png);
-}
-#style-switcher .theme-patterns .pattern-45-degree-fabric {
-  background-image: url(../images/patterns_samples/45degreee_fabric.png);
-}
-#style-switcher .theme-patterns .pattern-strange-bullseyes {
-  background-image: url(../images/patterns_samples/strange_bullseyes.png);
-}
-#style-switcher .theme-patterns .pattern-diamond-upholstery {
-  background-image: url(../images/patterns_samples/diamond_upholstery.png);
-}
-#style-switcher .theme-patterns .pattern-subtle-stripes {
-  background-image: url(../images/patterns_samples/subtle_stripes.png);
-}
 
 /* GENERAL MARKUP RULES */
 /* -------------------- */
 body {
   padding-top: 80px;
-  font-size: 20px;
+  font-size: 18px;
   background-position: 0 100px;
 }
 
@@ -205,6 +23,7 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   margin: 0;
 }
+
 h1 small, h2 small, h3 small, h4 small, h5 small {
   text-transform: none;
 }
@@ -282,16 +101,13 @@ figure {
 }
 .section.alt {
   background-repeat: repeat;
-  -webkit-box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 3px rgba(0, 0, 0, 0.25) inset;
-  -moz-box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 3px rgba(0, 0, 0, 0.25) inset;
-  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 3px rgba(0, 0, 0, 0.25) inset;
-  text-shadow: 1px 1px 1px white;
+  text-shadow: none;
 }
 
 /* HEADER SECTION */
 /* -------------- */
 #masthead .brand {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 30px;
   line-height: 30px;
   padding: 23px 20px 27px;
@@ -299,7 +115,7 @@ figure {
   margin-bottom: 0;
 }
 #masthead .brand a {
-  color: #555555;
+  color: #e9e9e9;
 }
 #masthead .brand i {
   line-height: 20px;
@@ -318,19 +134,18 @@ figure {
 }
 
 .navbar-inner {
-  background: white;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border-bottom: 1px solid #e9e9e9;
+  background: #144657;
+  border-bottom: 0;
 }
 
 .navbar .nav > li > a {
-  text-shadow: none;
   text-transform: uppercase;
+  text-shadow: none;
   font-weight: bold;
   padding: 29px 10px 31px;
   line-height: 19px;
+
+  color: #eee;
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
@@ -351,17 +166,33 @@ figure {
 }
 
 .navbar .nav li.dropdown.active > .dropdown-toggle:hover {
-  color: #41b7d8;
+  color: #144657;
 }
 
 .navbar .btn-navbar {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #555555));
-  background-image: -webkit-linear-gradient(#333333, #555555);
-  background-image: -moz-linear-gradient(#333333, #555555);
-  background-image: -o-linear-gradient(#333333, #555555);
-  background-image: linear-gradient(#333333, #555555);
-  background-color: #555555;
+  color: #33333;
+  background-color: #333;
+  background-image: none;
 }
+
+.navbar .btn-navbar .icon-bar {
+  background-color: #333;
+}
+
+.navbar .btn-navbar .icon-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+
 .navbar .btn-navbar:hover {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -379,6 +210,7 @@ figure {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
+
 .navbar .btn-navbar:hover:hover, .navbar .btn-navbar:hover:active, .navbar .btn-navbar:hover.active, .navbar .btn-navbar:hover.disabled, .navbar .btn-navbar:hover[disabled] {
   color: white;
   background-color: #040404;
@@ -418,7 +250,13 @@ figure {
 /* hero unit */
 .hero-unit {
   margin-bottom: 0;
+  color: white;
 }
+
+.hero-unit h1 {
+  text-align: center;
+}
+
 .alt .hero-unit {
   padding-left: 0;
   padding-right: 0;
@@ -427,6 +265,10 @@ figure {
 
 .hero-huge h1 {
   font-size: 20em;
+}
+
+.hero-em {
+  color: #ebba87;
 }
 
 /* fancy blockquote */
@@ -531,20 +373,19 @@ figure {
 /* well */
 .well {
   background: white;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid white;
-  -webkit-box-shadow: 0px 0px 3px rgba(51, 51, 51, 0.2);
-  -moz-box-shadow: 0px 0px 3px rgba(51, 51, 51, 0.2);
-  box-shadow: 0px 0px 3px rgba(51, 51, 51, 0.2);
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #73afc3;
+  color: #333;
 }
+
 .well h3 {
   text-align: center;
-  border-bottom: 1px solid white;
-  -webkit-box-shadow: 0px 1px 0px #e9e9e9;
-  -moz-box-shadow: 0px 1px 0px #e9e9e9;
-  box-shadow: 0px 1px 0px #e9e9e9;
+ /*
+  * border-bottom: 1px solid #144657;
+  */
   margin-bottom: 10px;
   padding-bottom: 10px;
+  color: #333;
 }
 
 /* page header */
@@ -552,6 +393,7 @@ figure {
   margin: 24px 0;
   padding-bottom: 23px;
 }
+
 .page-header h1 {
   line-height: 1;
 }
@@ -562,8 +404,9 @@ figure {
   color: #555555;
   text-decoration: none;
 }
+
 .alt .page-header {
-  border-color: #d0d0d0;
+  border-color: #73afc3;
 }
 
 .pager a {
@@ -642,7 +485,7 @@ figure {
   border-bottom: 1px solid #e9e9e9;
 }
 .alt .bordered > li {
-  border-color: #d0d0d0;
+  border-color: #73afc3;
 }
 
 /* Block display class */
@@ -739,9 +582,6 @@ figure {
 /* Pricing tables */
 .pricing-table {
   position: relative;
-  -webkit-box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.5), 0px 0px 20px rgba(153, 153, 153, 0.2) inset;
-  -moz-box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.5), 0px 0px 20px rgba(153, 153, 153, 0.2) inset;
-  box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.5), 0px 0px 20px rgba(153, 153, 153, 0.2) inset;
 }
 
 .pricing-table-price {
@@ -749,9 +589,6 @@ figure {
   margin: -10px -20px 0 -20px;
   padding: 8px 0 10px;
   background-color: #eeeeee;
-  -webkit-box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.2) inset;
-  -moz-box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.2) inset;
-  box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.2) inset;
   color: #41b7d8;
   text-shadow: 1px 1px 0 white;
 }
@@ -763,17 +600,13 @@ figure {
   list-style-type: none;
   margin: 0 0 20px;
   border-bottom: 1px solid white;
-  -webkit-box-shadow: 0px 1px 0px #e9e9e9;
-  -moz-box-shadow: 0px 1px 0px #e9e9e9;
-  box-shadow: 0px 1px 0px #e9e9e9;
 }
+
 .pricing-table-list li {
   border-top: 1px solid white;
-  -webkit-box-shadow: 0px -1px 0px #e9e9e9;
-  -moz-box-shadow: 0px -1px 0px #e9e9e9;
-  box-shadow: 0px -1px 0px #e9e9e9;
   padding: 8px;
 }
+
 .pricing-table-list li:first-child {
   border-color: transparent;
   -webkit-box-shadow: none;
@@ -1112,334 +945,10 @@ figure {
   line-height: 34px;
 }
 
-/* THEME PATTERNS */
-/* -------------- */
-.theme-pattern-lightmesh .section.alt, .theme-pattern-lightmesh.alt {
-  background-image: url(../images/patterns/lghtmesh.png);
-  background-size: 256px 256px;
-}
-
-.theme-pattern-bedge-grunge .section.alt, .theme-pattern-bedge-grunge.alt {
-  background-image: url(../images/patterns/bedge_grunge.png);
-  background-size: 588px  375px;
-}
-
-.theme-pattern-grid .section.alt, .theme-pattern-grid.alt {
-  background-image: url(../images/patterns/grid.png);
-  background-size: 310px  310px;
-}
-
-.theme-pattern-noisy-grid .section.alt, .theme-pattern-noisy-grid.alt {
-  background-image: url(../images/patterns/noisy_grid.png);
-  background-size: 150px  150px;
-}
-
-.theme-pattern-subtle-grey .section.alt, .theme-pattern-subtle-grey.alt {
-  background-image: url(../images/patterns/grey.png);
-  background-size: 397px  322px;
-}
-
-.theme-pattern-retina-wood .section.alt, .theme-pattern-retina-wood.alt {
-  background-image: url(../images/patterns/retina_wood.png);
-  background-size: 512px 512px;
-}
-
-.theme-pattern-noise-lines .section.alt, .theme-pattern-noise-lines.alt {
-  background-image: url(../images/patterns/noise_lines.png);
-  background-size: 60px 59px;
-}
-
-.theme-pattern-tiny-grid .section.alt, .theme-pattern-tiny-grid.alt {
-  background-image: url(../images/patterns/tiny_grid.png);
-  background-size: 26px 26px;
-}
-
-.theme-pattern-clean-paper .section.alt, .theme-pattern-clean-paper.alt {
-  background-image: url(../images/patterns/extra_clean_paper.png);
-  background-size: 512px 512px;
-}
-
-.theme-pattern-farmer .section.alt, .theme-pattern-farmer.alt {
-  background-image: url(../images/patterns/farmer.png);
-  background-size: 349px 349px;
-}
-
-.theme-pattern-project-papper .section.alt, .theme-pattern-project-papper.alt {
-  background-image: url(../images/patterns/project_papper.png);
-  background-size: 105px 105px;
-}
-
-.theme-pattern-concrete-wall .section.alt, .theme-pattern-concrete-wall.alt {
-  background-image: url(../images/patterns/concrete_wall_2.png);
-  background-size: 597px 545px;
-}
-
-.theme-pattern-wavecut .section.alt, .theme-pattern-wavecut.alt {
-  background-image: url(../images/patterns/wavecut.png);
-  background-size: 162px 15px;
-}
-
-.theme-pattern-little-pluses .section.alt, .theme-pattern-little-pluses.alt {
-  background-image: url(../images/patterns/little_pluses.png);
-  background-size: 300px 300px;
-}
-
-.theme-pattern-light-honeycomp .section.alt, .theme-pattern-light-honeycomp.alt {
-  background-image: url(../images/patterns/light_honeycomb.png);
-  background-size: 270px 289px;
-}
-
-.theme-pattern-old-mathematics .section.alt, .theme-pattern-old-mathematics.alt {
-  background-image: url(../images/patterns/old_mathematics.png);
-  background-size: 200px 200px;
-}
-
-.theme-pattern-45-degree-fabric .section.alt, .theme-pattern-45-degree-fabric.alt {
+.theme-pattern .section.alt, .theme-pattern.alt {
   background-image: url(../images/patterns/45degreee_fabric.png);
   background-size: 315px 315px;
-}
-
-.theme-pattern-strange-bullseyes .section.alt, .theme-pattern-strange-bullseyes.alt {
-  background-image: url(../images/patterns/strange_bullseyes.png);
-  background-size: 300px 300px;
-}
-
-.theme-pattern-diamond-upholstery .section.alt, .theme-pattern-diamond-upholstery.alt {
-  background-image: url(../images/patterns/diamond_upholstery.png);
-  background-size: 200px 200px;
-}
-
-.theme-pattern-subtle-stripes .section.alt, .theme-pattern-subtle-stripes.alt {
-  background-image: url(../images/patterns/subtle_stripes.png);
-  background-size: 40px 40px;
-}
-
-/* THEME COLORS */
-/* ------------ */
-/* Green color */
-.theme-color-green {
-  /* Docks Afix navigation */
-  /* tolltips */
-}
-.theme-color-green a {
-  color: #779922;
-}
-.theme-color-green a:hover {
-  color: #97c32b;
-}
-.theme-color-green #masthead .brand:hover i {
-  color: #779922;
-}
-.theme-color-green .navbar .nav li.dropdown.active > .dropdown-toggle:hover,
-.theme-color-green .navbar .nav li.dropdown.open > .dropdown-toggle, .theme-color-green .navbar .nav li.dropdown.active > .dropdown-toggle, .theme-color-green .navbar .nav li.dropdown.open.active > .dropdown-toggle,
-.theme-color-green .navbar .nav > .active > a, .theme-color-green .navbar .nav > .active > a:hover, .theme-color-green .navbar .nav > .active > a:focus,
-.theme-color-green .navbar .nav > li > a:focus, .theme-color-green .navbar .nav > li > a:hover {
-  color: #779922;
-}
-.theme-color-green .dropdown-menu a {
-  color: #333333;
-}
-.theme-color-green .dropdown-menu li > a:hover, .theme-color-green .dropdown-menu li > a:focus, .theme-color-green .dropdown-submenu:hover > a {
-  background-color: #709020;
-  background-image: -moz-linear-gradient(top, #779922, #67841d);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#779922), to(#67841d));
-  background-image: -webkit-linear-gradient(top, #779922, #67841d);
-  background-image: -o-linear-gradient(top, #779922, #67841d);
-  background-image: linear-gradient(to bottom, #779922, #67841d);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF779922', endColorstr='#FF67841D', GradientType=0);
-}
-.theme-color-green .page-header a {
-  color: #999999;
-}
-.theme-color-green .page-header a:hover {
-  color: #555555;
-}
-.theme-color-green .pricing-table-price {
-  color: #779922;
-}
-.theme-color-green .pricing-table-featured {
-  background: #779922;
-  border-color: #465a14;
-  text-shadow: 0px 1px 0px #576f19;
-}
-.theme-color-green .pricing-table-featured .pricing-table-price {
-  color: #779922;
-}
-.theme-color-green .pricing-table-featured .pricing-table-list {
-  border-color: #576f19;
-  -webkit-box-shadow: 0px 1px 0px #97c32b;
-  -moz-box-shadow: 0px 1px 0px #97c32b;
-  box-shadow: 0px 1px 0px #97c32b;
-}
-.theme-color-green .pricing-table-featured li {
-  border-color: #97c32b;
-  -webkit-box-shadow: 0px -1px 0px #576f19;
-  -moz-box-shadow: 0px -1px 0px #576f19;
-  box-shadow: 0px -1px 0px #576f19;
-}
-.theme-color-green .pricing-table-featured li:first-child {
-  border-color: transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-.theme-color-green .btn-primary {
-  color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #83a925;
-  background-image: -moz-linear-gradient(top, #779922, #97c32b);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#779922), to(#97c32b));
-  background-image: -webkit-linear-gradient(top, #779922, #97c32b);
-  background-image: -o-linear-gradient(top, #779922, #97c32b);
-  background-image: linear-gradient(to bottom, #779922, #97c32b);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF779922', endColorstr='#FF97C32B', GradientType=0);
-  border-color: #97c32b #97c32b #67841d;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #97c32b;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-.theme-color-green .btn-primary:hover, .theme-color-green .btn-primary:active, .theme-color-green .btn-primary.active, .theme-color-green .btn-primary.disabled, .theme-color-green .btn-primary[disabled] {
-  color: white;
-  background-color: #97c32b;
-  *background-color: #87ae27;
-}
-.theme-color-green .btn-primary:active, .theme-color-green .btn-primary.active {
-  background-color: #779922 \9;
-}
-.theme-color-green .docs-sidebar-nav li.active a, .theme-color-green .docs-sidebar-nav li.active a:hover, .theme-color-green .docs-sidebar-nav li a:hover {
-  color: #779922;
-  border-right: 3px solid #779922;
-}
-.theme-color-green .tooltip-inner {
-  background-color: #779922;
-}
-.theme-color-green .tooltip.top .tooltip-arrow {
-  border-top-color: #779922;
-}
-.theme-color-green .tooltip.right .tooltip-arrow {
-  border-right-color: #779922;
-}
-.theme-color-green .tooltip.left .tooltip-arrow {
-  border-left-color: #779922;
-}
-.theme-color-green .tooltip.bottom .tooltip-arrow {
-  border-bottom-color: #779922;
-}
-
-/* Red color */
-.theme-color-red {
-  /* Docks Afix navigation */
-  /* tolltips */
-}
-.theme-color-red a {
-  color: #e8481d;
-}
-.theme-color-red a:hover {
-  color: #ed6d4b;
-}
-.theme-color-red #masthead .brand:hover i {
-  color: #e8481d;
-}
-.theme-color-red .navbar .nav li.dropdown.active > .dropdown-toggle:hover,
-.theme-color-red .navbar .nav li.dropdown.open > .dropdown-toggle, .theme-color-red .navbar .nav li.dropdown.active > .dropdown-toggle, .theme-color-red .navbar .nav li.dropdown.open.active > .dropdown-toggle,
-.theme-color-red .navbar .nav > .active > a, .theme-color-red .navbar .nav > .active > a:hover, .theme-color-red .navbar .nav > .active > a:focus,
-.theme-color-red .navbar .nav > li > a:focus, .theme-color-red .navbar .nav > li > a:hover {
-  color: #e8481d;
-}
-.theme-color-red .dropdown-menu a {
-  color: #333333;
-}
-.theme-color-red .dropdown-menu li > a:hover, .theme-color-red .dropdown-menu li > a:focus, .theme-color-red .dropdown-submenu:hover > a {
-  background-color: #e0441a;
-  background-image: -moz-linear-gradient(top, #e8481d, #d63e16);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e8481d), to(#d63e16));
-  background-image: -webkit-linear-gradient(top, #e8481d, #d63e16);
-  background-image: -o-linear-gradient(top, #e8481d, #d63e16);
-  background-image: linear-gradient(to bottom, #e8481d, #d63e16);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE8481D', endColorstr='#FFD63E16', GradientType=0);
-}
-.theme-color-red .page-header a {
-  color: #999999;
-}
-.theme-color-red .page-header a:hover {
-  color: #555555;
-}
-.theme-color-red .pricing-table-price {
-  color: #e8481d;
-}
-.theme-color-red .pricing-table-featured {
-  background: #e8481d;
-  border-color: #a73111;
-  text-shadow: 0px 1px 0px #bf3813;
-}
-.theme-color-red .pricing-table-featured .pricing-table-price {
-  color: #e8481d;
-}
-.theme-color-red .pricing-table-featured .pricing-table-list {
-  border-color: #bf3813;
-  -webkit-box-shadow: 0px 1px 0px #ed6d4b;
-  -moz-box-shadow: 0px 1px 0px #ed6d4b;
-  box-shadow: 0px 1px 0px #ed6d4b;
-}
-.theme-color-red .pricing-table-featured li {
-  border-color: #ed6d4b;
-  -webkit-box-shadow: 0px -1px 0px #bf3813;
-  -moz-box-shadow: 0px -1px 0px #bf3813;
-  box-shadow: 0px -1px 0px #bf3813;
-}
-.theme-color-red .pricing-table-featured li:first-child {
-  border-color: transparent;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-.theme-color-red .btn-primary {
-  color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #ea562f;
-  background-image: -moz-linear-gradient(top, #e8481d, #ed6d4b);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e8481d), to(#ed6d4b));
-  background-image: -webkit-linear-gradient(top, #e8481d, #ed6d4b);
-  background-image: -o-linear-gradient(top, #e8481d, #ed6d4b);
-  background-image: linear-gradient(to bottom, #e8481d, #ed6d4b);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE8481D', endColorstr='#FFED6D4B', GradientType=0);
-  border-color: #ed6d4b #ed6d4b #d63e16;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #ed6d4b;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
-.theme-color-red .btn-primary:hover, .theme-color-red .btn-primary:active, .theme-color-red .btn-primary.active, .theme-color-red .btn-primary.disabled, .theme-color-red .btn-primary[disabled] {
-  color: white;
-  background-color: #ed6d4b;
-  *background-color: #ea5b34;
-}
-.theme-color-red .btn-primary:active, .theme-color-red .btn-primary.active {
-  background-color: #e8481d \9;
-}
-.theme-color-red .docs-sidebar-nav li.active a, .theme-color-red .docs-sidebar-nav li.active a:hover, .theme-color-red .docs-sidebar-nav li a:hover {
-  color: #e8481d;
-  border-right: 3px solid #e8481d;
-}
-.theme-color-red .tooltip-inner {
-  background-color: #e8481d;
-}
-.theme-color-red .tooltip.top .tooltip-arrow {
-  border-top-color: #e8481d;
-}
-.theme-color-red .tooltip.right .tooltip-arrow {
-  border-right-color: #e8481d;
-}
-.theme-color-red .tooltip.left .tooltip-arrow {
-  border-left-color: #e8481d;
-}
-.theme-color-red .tooltip.bottom .tooltip-arrow {
-  border-bottom-color: #e8481d;
+  color: #eee;
 }
 
 /* MEDIA QUERIES */
@@ -1626,94 +1135,21 @@ figure {
 }
 /* retina displays backgrounds */
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
-  .theme-pattern-lightmesh .section.alt, .theme-pattern-lightmesh.alt {
-    background-image: url(../images/patterns/lghtmesh_@2X.png);
-  }
-
-  .theme-pattern-bedge-grunge .section.alt, .theme-pattern-bedge-grunge.alt {
-    background-image: url(../images/patterns/bedge_grunge_@2X.png);
-  }
-
-  .theme-pattern-grid .section.alt, .theme-pattern-grid.alt {
-    background-image: url(../images/patterns/grid_@2X.png);
-  }
-
-  .theme-pattern-noisy-grid .section.alt, .theme-pattern-noisy-grid.alt {
-    background-image: url(../images/patterns/noisy_grid_@2X.png);
-  }
-
-  .theme-pattern-subtle-grey .section.alt, .theme-pattern-subtle-grey.alt {
-    background-image: url(../images/patterns/grey_@2X.png);
-  }
-
-  .theme-pattern-retina-wood .section.alt, .theme-pattern-retina-wood.alt {
-    background-image: url(../images/patterns/retina_wood_@2X.png);
-  }
-
-  .theme-pattern-noise-lines .section.alt, .theme-pattern-noise-lines.alt {
-    background-image: url(../images/patterns/noise_lines_@2X.png);
-  }
-
-  .theme-pattern-tiny-grid .section.alt, .theme-pattern-tiny-grid.alt {
-    background-image: url(../images/patterns/tiny_grid_@2X.png);
-  }
-
-  .theme-pattern-clean-paper .section.alt, .theme-pattern-clean-paper.alt {
-    background-image: url(../images/patterns/extra_clean_paper_@2X.png);
-  }
-
-  .theme-pattern-farmer .section.alt, .theme-pattern-farmer.alt {
-    background-image: url(../images/patterns/farmer_@2X.png);
-  }
-
-  .theme-pattern-project-papper .section.alt, .theme-pattern-project-papper.alt {
-    background-image: url(../images/patterns/project_papper_@2X.png);
-  }
-
-  .theme-pattern-concrete-wall .section.alt, .theme-pattern-concrete-wall.alt {
-    background-image: url(../images/patterns/concrete_wall_2_@2X.png);
-  }
-
-  .theme-pattern-wavecut .section.alt, .theme-pattern-wavecut.alt {
-    background-image: url(../images/patterns/wavecut_@2X.png);
-  }
-
-  .theme-pattern-little-pluses .section.alt, .theme-pattern-little-pluses.alt {
-    background-image: url(../images/patterns/little_pluses_@2X.png);
-  }
-
-  .theme-pattern-light-honeycomp .section.alt, .theme-pattern-light-honeycomp.alt {
-    background-image: url(../images/patterns/light_honeycomb_@2X.png);
-  }
-
-  .theme-pattern-old-mathematics .section.alt, .theme-pattern-old-mathematics.alt {
-    background-image: url(../images/patterns/old_mathematics_@2X.png);
-  }
-
   .theme-pattern-45-degree-fabric .section.alt, .theme-pattern-45-degree-fabric.alt {
     background-image: url(../images/patterns/45degreee_fabric_@2X.png);
-  }
-
-  .theme-pattern-strange-bullseyes .section.alt, .theme-pattern-strange-bullseyes.alt {
-    background-image: url(../images/patterns/strange_bullseyes_@2X.png);
-  }
-
-  .theme-pattern-diamond-upholstery .section.alt, .theme-pattern-diamond-upholstery.alt {
-    background-image: url(../images/patterns/diamond_upholstery_@2X.png);
-  }
-
-  .theme-pattern-subtle-stripes .section.alt, .theme-pattern-subtle-stripes.alt {
-    background-image: url(../images/patterns/subtle_stripes_@2X.png);
   }
 }
 
 .footer-banner a {
-    color: white;
+    color: #fff;
 }
 
 .footer-banner {
+  /*
     background-color: #41b7d8;
-    color: white;
+    */
+    background-color: #144657;
+    color: #eee;
     text-shadow: 0px 0px 0px; 
     margin-left: 142px;
     min-height: 586px;
@@ -1736,3 +1172,7 @@ figure {
   -moz-border-radius: 3px;
   border-radius; 3;
 }
+
+/*
+ * vim: ts=2 sts=2 et sw=2
+ */
